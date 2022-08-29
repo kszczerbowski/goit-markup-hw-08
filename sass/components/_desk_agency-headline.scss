@@ -1,9 +1,7 @@
 @media (min-width: 769px) {
-
-
 .box-headline {
     padding: 200px 252px 200px 252px;
-    background-image: url(../images/background-photo.jpg), 
+    background-image: url(../images/background-photo-desk.jpg), 
     linear-gradient(
     to right,
     #2F303A66,
@@ -13,6 +11,19 @@
     background-size: 1600px;
     background-color: $color-main-headline-footer-background;
     max-height: 600px;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .box-headline {
+    background-image: url(../images/background-photo-desk@2x.jpg), 
+    linear-gradient(
+    to right,
+    #2F303A66,
+    #2F303A66
+    );
+  }
 }
 
 .headline {

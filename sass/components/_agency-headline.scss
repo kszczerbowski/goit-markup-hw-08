@@ -1,6 +1,6 @@
 .box-headline {
     padding: 118px 59px;
-    background-image: url(../images/background-photo.jpg), 
+    background-image: url(../images/background-photo-mob.jpg), 
     linear-gradient(
     to right,
     #2F303A66,
@@ -8,8 +8,21 @@
     );
     background-position: 50% 50%;
     background-repeat: no-repeat;
-    background-size: 1600px;
+    background-size: cover;
     background-color: $color-main-headline-footer-background;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .box-headline {
+    background-image: url(../images/background-photo-mob@2x.jpg), 
+    linear-gradient(
+    to right,
+    #2F303A66,
+    #2F303A66
+    );
+  }
 }
 
 .headline {

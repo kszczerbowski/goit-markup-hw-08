@@ -1,0 +1,22 @@
+@media (min-width: 481px) and (max-width: 768px) {
+.box-headline {
+    background-image: url(../images/background-photo-tab.jpg), 
+    linear-gradient(
+    to right,
+    #2F303A66,
+    #2F303A66
+    );
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .box-headline {
+    background-image: url(../images/background-photo-tab@2x.jpg), 
+    linear-gradient(
+    to right,
+    #2F303A66,
+    #2F303A66
+    );
+  }
+}
+}

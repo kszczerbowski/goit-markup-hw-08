@@ -101,14 +101,18 @@
             color: $color-text-placeholder;
         }
     }
-    &__name, &__phone, &__mail, &__comment, &__formalities {
-        position: relative;
-    }
     &__icon {
         position: absolute;
-        left: 55px;
-        top: 32px;
         fill: $color-form-icon;
+        %--1st {
+
+        }
+        %--2nd {
+            
+        }
+        %--3rd {
+            
+        }
     }
     &__subheading {
         margin-left: 40px;
@@ -172,8 +176,10 @@
 
 .ordering-form__checkbox-icon {
     position: absolute;
-    left: 0px;
-    top: 15px;
+    left: 5px;
+    top: 23px;
+    width: 24px;
+    height: 24px;
     &--uncheck {
         z-index: 15;
         background-color: white;

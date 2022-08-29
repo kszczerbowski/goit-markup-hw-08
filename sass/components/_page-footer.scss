@@ -198,6 +198,9 @@
         position: absolute;
         left: 160px;
         top: 13px;
+        @media (max-width: 480px) {
+            left: -13px;
+        }
     }
     &__text {
         position: absolute;

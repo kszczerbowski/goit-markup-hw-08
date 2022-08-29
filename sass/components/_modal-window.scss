@@ -104,15 +104,15 @@
     &__icon {
         position: absolute;
         fill: $color-form-icon;
-        %--1st {
+        &--1st {
             top: 147px;
             left: 55px;
         }
-        %--2nd {
+        &--2nd {
             top: 207px;
             left: 55px;
         }
-        %--3rd {
+        &--3rd {
             top: 270px;
             left: 55px;
         }

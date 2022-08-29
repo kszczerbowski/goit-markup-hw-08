@@ -1,0 +1,11 @@
+@media (min-width: 481px) and (max-width: 768px) {
+.strengths {
+    display: flex;
+    flex-wrap: wrap;
+    &__strength {
+        flex-basis: calc((100%/2) - 3.9%);
+        margin-left: 1.95%;
+        margin-right: 1.95%;
+    }
+}
+}

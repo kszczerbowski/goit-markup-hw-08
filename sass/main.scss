@@ -1,0 +1,82 @@
+@import 'utils/colors';
+@import 'components/agency-headline';
+@import 'components/agency-clients';
+@import 'components/agency-employees';
+@import 'components/agency-strengths';
+@import 'components/agency-what-we-do';
+@import 'components/page-footer';
+@import 'components/page-header';
+@import 'components/portfolio-filters';
+@import 'components/portfolio-products';
+@import 'components/modal-window';
+@import 'components/tab_page-header';
+@import 'components/tab_page-footer';
+@import 'components/tab_modal-window';
+@import 'components/tab_agency-strengths';
+@import 'components/tab_agency-clients';
+@import 'components/tab_agency-employees';
+@import 'components/tab_portfolio-filters';
+@import 'components/tab_portfolio-products';
+@import 'components/desk_page-header';
+@import 'components/desk_page-footer';
+@import 'components/desk_modal-window';
+@import 'components/desk_agency-strengths';
+@import 'components/desk_agency-employees';
+@import 'components/desk_portfolio-filters';
+@import 'components/desk_portfolio-products';
+@import 'components/desk_agency-headline';
+@import 'components/desk_agency-clients';
+@import 'components/desk_agency-what-we-do';
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: $text-main;
+}
+
+.container {
+    max-width: 480px;
+    min-width: 320px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.section-name {
+    text-align: center;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    justify-content: center;
+    padding-bottom: 30px;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+.container {
+    max-width: 768px;
+    min-width: 508px;
+}
+}
+
+@media (min-width: 769px) {
+.container {
+    max-width: 1200px;
+}
+.container--desk {
+    max-width: 9999px;
+}
+.headline-container {
+    max-width: 1200px;
+    margin: 0px auto;
+}
+.section-name {
+    font-size: 36px;
+}
+}

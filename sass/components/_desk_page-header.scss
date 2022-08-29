@@ -1,0 +1,95 @@
+@media (min-width: 769px) {
+.not-mobile {
+    visibility: visible;
+    position: relative;
+}
+
+.mobile {
+    visibility: hidden;
+    position: fixed;
+}
+
+.box-menu {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.box-menu {
+    &__box-nav {
+        justify-content: space-between;
+        display: flex;
+        align-items: baseline;
+        width: 45%;
+        @media (max-width: 1000px) {
+            width: 60%;
+        }
+    }
+    &__contact-box {
+        right: 15px;
+    }
+    &__header {
+        transition-property: color, fill, background-color, box-shadow;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        text-decoration: none;
+        color: $text-main;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        font-weight: 500;
+        position: relative;
+        &:hover, &:focus {
+            fill: $color-active;
+            color: $color-active;
+            font-weight: 500;
+        }
+        &--active {
+            color: $color-active;
+            position: relative;
+            &::after {
+                content: '';
+                background-color: $color-active;
+                width: 100%;
+                height: 4px;
+                border-radius: 2px;
+                display: block;
+                position: absolute;
+                top: 41px;
+                right: 0px;
+            }
+        }
+        &--contact {
+            fill: $color-icon;
+            color: $text-secondary;
+            font-size: 14px;
+        }
+    }
+    &__icon {
+        margin-right: 8px;
+    }
+    &__Web {
+        color: $color-active;
+        font-weight: 700;
+    }
+    &__Webstudio-header {
+        text-decoration: none;
+        font-size: 26px;
+        font-weight: 400;
+        font-family: 'Raleway', sans-serif;
+        line-height: 1.19;
+        letter-spacing: 0.03em;
+        color: $text-studio-header;
+        margin-left: 3.11%;
+        margin-right: 4.76%;
+        color: $text-main;
+        &:hover, &:focus {
+            color: $text-studio-header;
+            font-size: 26px;
+            font-weight: 700;
+        }
+    }
+}
+}

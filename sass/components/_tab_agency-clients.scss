@@ -1,0 +1,32 @@
+@media (min-width: 481px) and (max-width: 768px) {
+.clients {
+    display: flex;
+    justify-content: space-around;
+    &__background {
+        width: 100%;
+        height: 92px;
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        fill: $color-icon;
+        border: solid $color-icon 1px;
+    }
+    &__client:nth-child(2n-1) {
+        margin-right: 0px;
+    }
+    &__client:nth-child(2n) {
+        margin-left: 0px;
+    }
+    &__client:nth-child(3), &__client:nth-child(4) {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    &__client:nth-child(1), &__client:nth-child(2), &__client:nth-child(3) {
+        margin-bottom: 30px;
+    }
+    &__client {
+        flex-basis: calc((100%/3) - 30px);
+    }
+}
+}

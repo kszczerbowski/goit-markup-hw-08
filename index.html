@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+  />
+    <link rel="stylesheet" href="css/main.min.css?v=1.0.0"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <title>Studio</title>
+</head>
+<body>
+  <header class="header">
+  <div class = "container">
+    <div class = "box-menu">
+      <nav class = "box-menu__box-nav">
+        <a class="box-menu__Webstudio-header" href="index.html"><span class = "box-menu__Web">Web</span>Studio</a>
+        <a class = "box-menu__header box-menu__header--active not-mobile" href="index.html">Agencja</a>
+        <a class = "box-menu__header not-mobile" href="portfolio.html">Portfolio</a>
+        <a class = "box-menu__header not-mobile" href="kontakt.html">Kontakt</a>
+        <svg class="box-menu__mobile-menu-icon js-open-menu mobile" width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M8 14.6667V12H32V14.6667H8ZM8 21.3333H32V18.6667H8V21.3333ZM8 28H32V25.3333H8V28Z"/>
+          </svg>
+      </nav>
+      <nav mobile-menu class="mobile-nav js-menu-container">
+        <svg mobile-menu-close class="js-close-menu mobile-nav-close-button" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M29.6667 12.88L27.7867 11L20.3333 18.4533L12.88 11L11 12.88L18.4533 20.3333L11 27.7867L12.88 29.6667L20.3333 22.2133L27.7867 29.6667L29.6667 27.7867L22.2133 20.3333L29.6667 12.88Z" fill="#212121"/>
+        </svg>
+        <a class = "mobile-nav__agency mobile-nav__header--active" href="index.html">Agencja</a>
+        <a class = "mobile-nav__portfolio" href="portfolio.html">Portfolio</a>
+        <a class = "mobile-nav__contact" href="kontakt.html">Kontakt</a>
+        <a class = "mobile-nav__phone" href="tel:+48111111111">+48 111 111 111</a>
+        <a class = "mobile-nav__mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        <ul class="mobile-nav__socials">
+          <li class="mobile-nav__social">
+            <a class = "mobile-nav__social-link" href="">Instagram</a>
+          </li>
+          <li class="mobile-nav__social">
+            <a class = "mobile-nav__social-link" href="">Twitter</a>
+          </li>
+          <li class="mobile-nav__social">
+            <a class = "mobile-nav__social-link" href="">Facebook</a>
+          </li>
+          <li class="mobile-nav__social">
+            <a class = "mobile-nav__social-link" href="">Linkedin</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="box-menu__contact-box not-mobile">
+        <a class = "box-menu__header box-menu__header--contact" href="mailto:info@devstudio.com">          
+          <svg class="box-menu__icon" width="16" height="12">
+            <use
+              href="/goit-markup-hw-08/images/icons.svg#icon-envelope"
+            ></use>
+          </svg>
+          info@devstudio.com
+        </a>
+        <a class = "box-menu__header box-menu__header--contact" href="tel:+48111111111">
+          <svg class="box-menu__icon" width="10" height="16">
+            <use
+              href="/goit-markup-hw-08/images/icons.svg#icon-smartphone"
+            ></use>
+          </svg>
+          +48 111 111 111
+        </a>
+      </div>
+    </div>
+  </div>
+  </header>
+  <main>
+    <div class = "container container--desk">
+      <div class = "box-headline">
+        <div class="headline-container">
+          <h1 class = "headline">Efektywne rozwiązania dla waszego biznesu</h1>
+          <button class="order-button" data-modal-open type="button">Zamów usługę</button>
+        </div>
+      </div>
+    </div>
+    <div class = "section">
+      <div class = "container">
+        <ul class="strengths">
+          <li class="strengths__strength">
+            <div class = "strengths__icon-background">
+              <svg width="67.92" height="70">
+                <use
+                href="/goit-markup-hw-08/images/icons.svg#icon-antenna"
+              ></use>
+              </svg>
+            </div>
+            <h3 class = "strengths__heading">Lorem ipsum</h3>
+            <p class = "strengths__text">
+              Lorem ipsum dolor sit amet consectetur adlipiscing elit. Nam vel 
+              arcu sem. Sed non sodales dui. Interdum et malesuada
+          </p>
+          </li>
+          <li class="strengths__strength">
+            <div class = "strengths__icon-background">
+              <svg width="68.96" height="70">
+                <use
+                href="/goit-markup-hw-08/images/icons.svg#icon-clock"
+              ></use>
+              </svg>
+            </div>
+            <h3 class = "strengths__heading">Lorem ipsum</h3>
+            <p class = "strengths__text">
+              Lorem ipsum dolor sit amet consectetur adlipiscing elit. Nam vel 
+              arcu sem. Sed non sodales dui. Interdum et malesuada
+          </p>
+          </li>
+          <li class="strengths__strength">
+            <div class = "strengths__icon-background">
+              <svg width="70" height="62.69">
+                <use
+                href="/goit-markup-hw-08/images/icons.svg#icon-diagram"
+              ></use>
+              </svg>
+            </div>
+            <h3 class = "strengths__heading">Lorem ipsum</h3>
+            <p class = "strengths__text">
+              Lorem ipsum dolor sit amet consectetur adlipiscing elit. Nam vel 
+              arcu sem. Sed non sodales dui. Interdum et malesuada
+          </p>
+          </li>
+          <li class="strengths__strength">
+            <div class = "strengths__icon-background">
+                <svg width="68.74" height="60.66">
+                  <use
+                  href="/goit-markup-hw-08/images/icons.svg#icon-astronaut"
+                ></use>
+                </svg>
+            </div>
+            <h3 class = "strengths__heading">Lorem ipsum</h3>
+            <p class = "strengths__text">
+              Lorem ipsum dolor sit amet consectetur adlipiscing elit. Nam vel 
+              arcu sem. Sed non sodales dui. Interdum et malesuada
+          </p>
+          </li>
+        </ul>
+        <!-- <ul class="strengths-icons">
+          <li class = "strengths-icons__strength">
+            <div class = "strengths-icons__strength-background">
+              <svg width="67.92" height="70">
+                <use
+                href="/goit-markup-hw-08/images/icons.svg#icon-antenna"
+              ></use>
+              </svg>
+            </div>
+          </li>
+          <li class = "strengths-icons__strength">
+            <div class = "strengths-icons__strength-background">
+              <svg width="68.96" height="70">
+                <use
+                href="/goit-markup-hw-08/images/icons.svg#icon-clock"
+              ></use>
+              </svg>
+            </div>
+          </li>
+          <li class = "strengths-icons__strength">
+            <div class = "strengths-icons__strength-background">
+              <svg width="70" height="62.69">
+                <use
+                href="/goit-markup-hw-08/images/icons.svg#icon-diagram"
+              ></use>
+              </svg>
+            </div>
+          </li>
+          <li class = "strengths-icons__strength">
+            <div class = "strengths-icons__strength-background">
+              <svg width="68.74" height="60.66">
+                <use
+                href="/goit-markup-hw-08/images/icons.svg#icon-astronaut"
+              ></use>
+              </svg>
+            </div>
+          </li>
+        </ul>
+        <ul class="strengths">
+          <li class = "strengths__strength">
+            <div class = "strengths__text-block">  
+            <h3 class = "strengths__heading">Lorem ipsum</h3>
+              <p class = "strengths__text">
+                  Lorem ipsum dolor sit amet consectetur <br>
+                  adlipiscing elit. Nam vel arcu sem. Sed <br>
+                  non sodales dui. Interdum et malesuada
+              </p>
+            </div>  
+          </li>
+          <li class = "strengths__strength">
+            <div class = "strengths__text-block">  
+              <h3 class = "strengths__heading">Lorem ipsum</h3>
+              <p class = "strengths__text">
+                  Lorem ipsum dolor sit amet consectetur <br>
+                  adlipiscing elit. Nam vel arcu sem. Sed <br>
+                  non sodales dui. Interdum et malesuada
+              </p>
+            </div>  
+          </li>
+          <li class = "strengths__strength">
+            <div class = "strengths__text-block">  
+              <h3 class = "strengths__heading">Lorem ipsum</h3>
+              <p class = "strengths__text">
+                  Lorem ipsum dolor sit amet consectetur <br>
+                  adlipiscing elit. Nam vel arcu sem. Sed <br>
+                  non sodales dui. Interdum et malesuada
+              </p>
+            </div>  
+          </li>
+          <li class = "strengths__strength">
+            <div class = "strengths__text-block">  
+              <h3 class = "strengths__heading">Lorem ipsum</h3>
+              <p class = "strengths__text">
+                  Lorem ipsum dolor sit amet consectetur <br>
+                  adlipiscing elit. Nam vel arcu sem. Sed <br>
+                  non sodales dui. Interdum et malesuada
+              </p>
+            </div>  
+          </li>
+        </ul> -->
+      </div>
+    </div>
+    <section class = "section desk">
+      <div class = "container">
+        <h2 class = "section-name">Czym się zajmujemy</h2>
+        <ul class="product-types">
+          <li class = "product-types__product-type">
+            <img class="product-types__img"
+            src="images/computer_click_smart.jpg"
+            alt="Dłonie klikają w kąkuter"
+            width="370"
+            height="294"
+            />
+            <div class="product-types__pic-description-box"><span class="product-types__pic-description">APLIKACJE KOMPUTEROWE</span></div>
+          </li>
+          <li class = "product-types__product-type">
+            <img class="product-types__img"
+            src="images/computer_mobile_browse.jpg"
+            alt="Człowiek ogląda telefon i telefony"
+            width="370"
+            height="294"
+            />
+            <div class="product-types__pic-description-box"><span class="product-types__pic-description">APLIKACJE MOBILNE</span></div>
+          </li>
+          <li class = "product-types__product-type">
+            <img class="product-types__img"
+            src="images/what_colour_important.jpg"
+            alt="Dużo kolorów bardzo"
+            width="370"
+            height="294"
+            />
+            <div class="product-types__pic-description-box"><span class="product-types__pic-description">ROZWIĄZANIA GRAFICZNE</span></div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class = "section section--team">
+      <div class = "container">
+        <h2 class = "section-name">Nasz zespół</h2>
+        <ul class="employees">
+          <li class = "employees__employee">
+            <figure class = "employees__employee-tile">
+              <img class = "employees__img-employee"
+              src="images/john_doe.jpg"
+              alt="Product Designer się podśmiechuje"
+              />
+              <figcaption><h4 class = "employees__name">John Doe</h4><h5 class = "employees__title">Product Designer</h5></figcaption>
+              <ul class = "socials">
+                <li class = "socials__icon">
+                  <div class = "socials__circle">
+                    <svg width="20" height="20">
+                      <use
+                      href="/goit-markup-hw-08/images/icons.svg#icon-insta"
+                      ></use>
+                    </svg>
+                  </div>
+                </li>
+                <li class = "socials__icon">
+                  <div class = "socials__circle">
+                    <svg width="20" height="16.25">
+                      <use
+                      href="/goit-markup-hw-08/images/icons.svg#icon-twitter"
+                      ></use>
+                    </svg>
+                  </div>
+                </li>
+                <li class = "socials__icon">
+                  <div class = "socials__circle">
+                    <svg width="10" height="20">
+                      <use
+                      href="/goit-markup-hw-08/images/icons.svg#icon-facebook"
+                      ></use>
+                    </svg>
+                  </div>
+                </li>
+                <li class = "socials__icon">
+                  <div class = "socials__circle">
+                    <svg width="20" height="20">
+                      <use
+                      href="/goit-markup-hw-08/images/icons.svg#icon-linkedin"
+                      ></use>
+                    </svg>
+                  </div>
+                </li>
+              </ul>
+            </figure>
+          </li>
+          <li class = "employees__employee">
+            <figure class = "employees__employee-tile">
+              <img class = "employees__img-employee"
+              src="images/john_doe_woman.jpg"
+              alt="Frontend Developer też się podśmiechuje"
+              />
+              <figcaption><h4 class = "employees__name">John Doe</h4><h5 class = "employees__title">Frontend Developer</h5></figcaption>
+              <ul class = "socials">
+                <li class = "socials__icon">
+                  <div class = "socials__circle">
+                    <svg width="20" height="20">
+                      <use
+                      href="/goit-markup-hw-08/images/icons.svg#icon-insta"
+                      ></use>
+                    </svg>
+                  </div>
+                </li>
+                <li class = "socials__icon">
+                  <div class = "socials__circle">
+                    <svg width="20" height="16.25">
+                      <use
+                      href="/goit-markup-hw-08/images/icons.svg#icon-twitter"
+                      ></use>
+                    </svg>
+                  </div>
+                </li>
+                <li class = "socials__icon">
+                  <div class = "socials__circle">
+                    <svg width="10" height="20">
+                      <use
+                      href="/goit-markup-hw-08/images/icons.svg#icon-facebook"
+                      ></use>
+                    </svg>
+                  </div>
+                </li>
+                <li class = "socials__icon">
+                  <div class = "socials__circle">
+                    <svg width="20" height="20">
+                      <use
+                      href="/goit-markup-hw-08/images/icons.svg#icon-linkedin"
+                      ></use>
+                    </svg>
+                  </div>
+                </li>
+              </ul>
+              </figure>
+          </li>
+          <li class = "employees__employee">
+            <figure class = "employees__employee-tile">
+              <img class = "employees__img-employee"
+              src="images/john_doe_again.jpg"
+              alt="Marketing się podśmiechuje, ale trochę w bok"
+              />
+              <figcaption><h4 class = "employees__name">John Doe</h4><h5 class = "employees__title">Marketing</h5></figcaption>
+              <ul class = "socials">
+                <li class = "socials__icon">
+                  <div class = "socials__circle">
+                    <svg width="20" height="20">
+                      <use
+                      href="/goit-markup-hw-08/images/icons.svg#icon-insta"
+                      ></use>
+                    </svg>
+                  </div>
+                </li>
+                <li class = "socials__icon">
+                  <div class = "socials__circle">
+                    <svg width="20" height="16.25">
+                      <use
+                      href="/goit-markup-hw-08/images/icons.svg#icon-twitter"
+                      ></use>
+                    </svg>
+                  </div>
+                </li>
+                <li class = "socials__icon">
+                  <div class = "socials__circle">
+                    <svg width="10" height="20">
+                      <use
+                      href="/goit-markup-hw-08/images/icons.svg#icon-facebook"
+                      ></use>
+                    </svg>
+                  </div>
+                </li>
+                <li class = "socials__icon">
+                  <div class = "socials__circle">
+                    <svg width="20" height="20">
+                      <use
+                      href="/goit-markup-hw-08/images/icons.svg#icon-linkedin"
+                      ></use>
+                    </svg>
+                  </div>
+                </li>
+              </ul>
+            </figure>
+          </li>
+          <li class = "employees__employee">
+            <figure class = "employees__employee-tile">
+              <img class = "employees__img-employee"
+              src="images/john_doe_again_again.jpg"
+              alt="UI Designer się uśmiecha"
+              />
+              <figcaption><h4 class = "employees__name">John Doe</h4><h5 class = "employees__title">UI Designer</h5></figcaption>
+              <ul class = "socials">
+                <li class = "socials__icon">
+                  <div class = "socials__circle">
+                    <svg width="20" height="20">
+                      <use
+                      href="/goit-markup-hw-08/images/icons.svg#icon-insta"
+                      ></use>
+                    </svg>
+                  </div>
+                </li>
+                <li class = "socials__icon">
+                  <div class = "socials__circle">
+                    <svg width="20" height="16.25">
+                      <use
+                      href="/goit-markup-hw-08/images/icons.svg#icon-twitter"
+                      ></use>
+                    </svg>
+                  </div>
+                </li>
+                <li class = "socials__icon">
+                  <div class = "socials__circle">
+                    <svg width="10" height="20">
+                      <use
+                      href="/goit-markup-hw-08/images/icons.svg#icon-facebook"
+                      ></use>
+                    </svg>
+                  </div>
+                </li>
+                <li class = "socials__icon">
+                  <div class = "socials__circle">
+                    <svg width="20" height="20">
+                      <use
+                      href="/goit-markup-hw-08/images/icons.svg#icon-linkedin"
+                      ></use>
+                    </svg>
+                  </div>
+                </li>
+              </ul>
+            </figure>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class = "section">
+      <div class = "container">
+        <h2 class = "section-name">Nasi klienci</h2>
+        <ul class="clients">
+          <li class = "clients__client">
+            <div class = "clients__background">
+              <svg width="41" height="46.7">
+                <use
+                  href="/goit-markup-hw-08/images/icons.svg#icon-client1"
+                ></use>
+              </svg>
+            </div>                    
+          </li>
+          <li class = "clients__client">
+            <div class = "clients__background">
+              <svg width="40" height="52">
+                <use
+                  href="/goit-markup-hw-08/images/icons.svg#icon-client2"
+                ></use>
+              </svg>
+            </div>                    
+          </li>
+          <li class = "clients__client">
+            <div class = "clients__background">
+              <svg width="43.46" height="41.18">
+                <use
+                  href="/goit-markup-hw-08/images/icons.svg#icon-client3"
+                ></use>
+              </svg>
+            </div>
+          </li>
+          <li class = "clients__client">
+            <div class = "clients__background">
+              <svg width="84.44" height="40.62">
+                <use
+                  href="/goit-markup-hw-08/images/icons.svg#icon-client4"
+                ></use>
+              </svg>
+            </div>
+          </li>
+          <li class = "clients__client">
+            <div class = "clients__background">
+              <svg width="62.54" height="45.43">
+                <use
+                  href="/goit-markup-hw-08/images/icons.svg#icon-client5"
+                ></use>
+              </svg>
+            </div>
+          </li>
+          <li class = "clients__client">
+            <div class = "clients__background">
+              <svg width="93.79" height="43.93">
+                <use
+                  href="/goit-markup-hw-08/images/icons.svg#icon-client6"
+                ></use>
+              </svg>
+            </div>                    
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class = "container container--footer">
+      <ul class = "footer-elements">
+        <li class = "footer-block">
+          <div>
+            <a class="footer-block__Webstudio" href="index.html"><span class = "footer-block__Web">Web</span>Studio</a>
+            <address class = "footer-block__address">m. Warszawa, Aleje Jerozolimskie 21</address>
+            <a class = "footer-block__contact-info" href="mailto:info@example.com">info@example.com</a>
+            <a class = "footer-block__contact-info" href="tel:+48111111111">+48 111 111 111</a>
+          </div>
+        </li>
+        <li class = "footer-block">
+          <div>
+            <span class = "join-us">DOŁĄCZ DO NAS</span>
+            <ul class = "socials socials--footer">
+              <li class = "socials__icon socials__icon--footer">
+                <div class = "socials__circle socials__circle--footer">
+                  <svg width="20" height="20">
+                    <use
+                    href="/goit-markup-hw-08/images/icons.svg#icon-insta"
+                    ></use>
+                  </svg>
+                </div>
+              </li>
+              <li class = "socials__icon socials__icon--footer">
+                <div class = "socials__circle socials__circle--footer">
+                  <svg width="20" height="16.25">
+                    <use
+                    href="/goit-markup-hw-08/images/icons.svg#icon-twitter"
+                    ></use>
+                  </svg>
+                </div>
+              </li>
+              <li class = "socials__icon socials__icon--footer">
+                <div class = "socials__circle socials__circle--footer">
+                  <svg width="10" height="20">
+                    <use
+                    href="/goit-markup-hw-08/images/icons.svg#icon-facebook"
+                    ></use>
+                  </svg>
+                </div>
+              </li>
+              <li class = "socials__icon socials__icon--footer">
+                <div class = "socials__circle socials__circle--footer">
+                  <svg width="20" height="20">
+                    <use
+                    href="/goit-markup-hw-08/images/icons.svg#icon-linkedin"
+                    ></use>
+                  </svg>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class = "footer-block">
+          <div class="newsletter-box">
+            <span class="newsletter-slogan">ZAPISZ SIĘ DO NEWSLETTERA</span>
+            <form class="newsletter" name="newsletter">
+              <label class="newsletter__mail">
+                <input class="newsletter__input" type="email" name="email" placeholder="E-mail" />
+              </label>
+            </form>
+          </div>
+        </li>
+        <li class = "footer-block">
+          <div class="submit-button-newsletter-box">
+            <button class="submit-button-newsletter" type="submit"><span class="submit-button-newsletter__text">Zapisz się</span></button>
+            <a href="">
+              <svg class="submit-button-newsletter__icon" width="24" height="24">
+                <use
+                href="/goit-markup-hw-08/images/icons.svg#icon-newsletter-send"
+                ></use>
+              </svg>
+            </a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </footer>
+<div class="modal-window-backdrop is-hidden" data-modal>
+  <div class="modal-window container">
+    <div class="modal-window__button-box">
+      <button class="modal-window-button" data-modal-close type="button">
+        <svg width="18" height="30" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M15 4.10786L13.8921 3L9.5 7.39214L5.10786 3L4 4.10786L8.39214 8.5L4 12.8921L5.10786 14L9.5 9.60786L13.8921 14L15 12.8921L10.6079 8.5L15 4.10786Z" fill="black"/>
+        </svg>
+      </button>
+    </div>
+    <p class="form-heading">Zostaw swoje dane w formularzu poniżej</p>
+    <form name="data-form" class="ordering-form">
+      <label class="ordering-form__name">
+        <span class="ordering-form__subheading">Imię</span>
+        <input class="ordering-form__input" type="text" name="name" />
+        <div class="ordering-form__icon">
+          <svg width="12" height="12">
+            <use
+            href="/goit-markup-hw-08/images/icons.svg#icon-person-black"
+            ></use>
+          </svg>   
+        </div>
+        </label>
+      <label class="ordering-form__phone">
+        <span class="ordering-form__subheading">Telefon</span>
+        <input class="ordering-form__input" type="tel" name="phone" />
+        <div class="ordering-form__icon">
+          <svg width="14" height="14">
+            <use
+            href="/goit-markup-hw-08/images/icons.svg#icon-phone-black"
+            ></use>
+          </svg>   
+        </div>
+        </label>
+      <label class="ordering-form__mail">
+        <span class="ordering-form__subheading">Email</span>
+        <input class="ordering-form__input" type="email" name="email" />
+        <div class="ordering-form__icon">
+          <svg width="16" height="12">
+            <use
+            href="/goit-markup-hw-08/images/icons.svg#icon-email-black"
+            ></use>
+          </svg>
+        </div>
+        </label>
+      <label class="ordering-form__comment">
+        <span class="ordering-form__subheading">Komentarz</span>
+        <textarea class="ordering-form__comment-field" name="comment" rows="8" placeholder="Wprowadź tekst"></textarea>
+      </label>
+      <label class="ordering-form__formalities">
+        <div class="ordering-form__terms-box">
+        <input class="ordering-form__terms-checkbox" type="checkbox" name="terms-conditions" value="terms-accepted">
+          <div class="ordering-form__checkbox-icon ordering-form__checkbox-icon--uncheck">
+            <svg width="24" height="24">
+              <use
+              href="/goit-markup-hw-08/images/icons.svg#icon-icon-uncheck"
+              ></use>
+            </svg>       
+          </div>
+          <div class="ordering-form__checkbox-icon ordering-form__checkbox-icon--check">
+            <svg width="24" height="24">
+              <use
+              href="/goit-markup-hw-08/images/icons.svg#icon-icon-check"
+              ></use>
+            </svg>
+          </div>
+          <span class="ordering-form__statement">Oświadczam, iż akceptuję <a href=""><span class="ordering-form__terms-conditions">Regulamin</span></a> i <a href=""><span class="ordering-form__terms-conditions">Politykę Prywatności.</span></a></span>
+        </div>
+      </label>
+      <button class="submit-button" type="submit">Wyślij</button>
+    </form>
+  </div>
+</div>
+  <script src="./js/modal.js"></script>
+  <script src="./js/mobile-menu.js"></script>
+</body>
+</html>

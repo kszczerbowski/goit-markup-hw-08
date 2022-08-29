@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+  />
+    <link rel="stylesheet" href="css/main.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
+</head>
+<body>
+  <header class="header">
+    <div class = "container">
+      <div class = "box-menu">
+        <nav class = "box-menu__box-nav">
+          <a class="box-menu__Webstudio-header" href="index.html"><span class = "box-menu__Web">Web</span>Studio</a>
+          <a class = "box-menu__header not-mobile" href="index.html">Agencja</a>
+          <a class = "box-menu__header box-menu__header--active not-mobile" href="portfolio.html">Portfolio</a>
+          <a class = "box-menu__header not-mobile" href="kontakt.html">Kontakt</a>
+          <svg class="box-menu__mobile-menu-icon js-open-menu mobile" width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M8 14.6667V12H32V14.6667H8ZM8 21.3333H32V18.6667H8V21.3333ZM8 28H32V25.3333H8V28Z"/>
+            </svg>
+        </nav>
+        <nav mobile-menu class="mobile-nav js-menu-container">
+          <svg mobile-menu-close class="js-close-menu mobile-nav-close-button" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M29.6667 12.88L27.7867 11L20.3333 18.4533L12.88 11L11 12.88L18.4533 20.3333L11 27.7867L12.88 29.6667L20.3333 22.2133L27.7867 29.6667L29.6667 27.7867L22.2133 20.3333L29.6667 12.88Z" fill="#212121"/>
+          </svg>
+          <a class = "mobile-nav__agency mobile-nav__header--active" href="index.html">Agencja</a>
+          <a class = "mobile-nav__portfolio" href="portfolio.html">Portfolio</a>
+          <a class = "mobile-nav__contact" href="kontakt.html">Kontakt</a>
+          <a class = "mobile-nav__phone" href="tel:+48111111111">+48 111 111 111</a>
+          <a class = "mobile-nav__mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          <ul class="mobile-nav__socials">
+            <li class="mobile-nav__social">
+              <a class = "mobile-nav__social-link" href="">Instagram</a>
+            </li>
+            <li class="mobile-nav__social">
+              <a class = "mobile-nav__social-link" href="">Twitter</a>
+            </li>
+            <li class="mobile-nav__social">
+              <a class = "mobile-nav__social-link" href="">Facebook</a>
+            </li>
+            <li class="mobile-nav__social">
+              <a class = "mobile-nav__social-link" href="">Linkedin</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="box-menu__contact-box not-mobile">
+          <a class = "box-menu__header box-menu__header--contact" href="mailto:info@devstudio.com">          
+            <svg class="box-menu__icon" width="16" height="12">
+              <use
+                href="/goit-markup-hw-08/images/icons.svg#icon-envelope"
+              ></use>
+            </svg>
+            info@devstudio.com
+          </a>
+          <a class = "box-menu__header box-menu__header--contact" href="tel:+48111111111">
+            <svg class="box-menu__icon" width="10" height="16">
+              <use
+                href="/goit-markup-hw-08/images/icons.svg#icon-smartphone"
+              ></use>
+            </svg>
+            +48 111 111 111
+          </a>
+        </div>
+      </div>
+    </div>
+    </header>
+  <main>
+    <div class = "container">
+      <section class = "section">
+        <ul class="filters">
+          <li class = "filters__filter">
+              <button class="filter-button filter-button--all" type="button" onclick="alert('Na chwilę obecną funkcjonalność nie jest dostępna. Za utrudnienia przepraszamy!')">Wszystkie</button>
+          </li>
+          <li class = "filters__filter">
+              <button class="filter-button filter-button--sites" type="button" onclick="alert('Na chwilę obecną funkcjonalność nie jest dostępna. Za utrudnienia przepraszamy!')">Strony</button>
+          </li>
+          <li class = "filters__filter">
+              <button class="filter-button filter-button--apps" type="button" onclick="alert('Na chwilę obecną funkcjonalność nie jest dostępna. Za utrudnienia przepraszamy!')">Aplikacje</button>
+          </li>
+          <li class = "filters__filter">
+              <button class="filter-button filter-button--design" type="button" onclick="alert('Na chwilę obecną funkcjonalność nie jest dostępna. Za utrudnienia przepraszamy!')">Dizajn</button>
+          </li>
+          <li class = "filters__filter">
+              <button class="filter-button filter-button--marketing" type="button" onclick="alert('Na chwilę obecną funkcjonalność nie jest dostępna. Za utrudnienia przepraszamy!')">Marketing</button>
+          </li>
+        </ul>
+        <ul class="products">
+          <li class = "products__product">
+            <figure class="products__product-tile">
+              <div class="products__animation-field">
+                <img class = "products__img"
+                src="images/portfolio1.jpg"
+                alt="Technocrack"
+                />
+                <div class="products__card-popup-box"><span class="products__card-popup-description">Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji</span></div> 
+              </div>
+              <figcaption class = "products__bottom"><h4 class="products__name">Technocrack</h4><h5 class="products__category products__category--tabpadding1">Strona internetowa</span></figcaption>
+            </figure>
+          </li>
+          <li class = "products__product">
+            <figure class="products__product-tile">
+              <div class="products__animation-field">
+                <img class = "products__img"
+                src="images/portfolio2.jpg"
+                alt="Basketball duel"
+                />
+                <div class="products__card-popup-box"><span class="products__card-popup-description">Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji</span></div> 
+              </div>
+              <figcaption class = "products__bottom"><h4 class="products__name">Grafika New Orlean vs Golden Star</h4><h5 class="products__category">Dizajn</span></figcaption>
+            </figure>
+          </li>
+          <li class = "products__product">
+            <figure class="products__product-tile">
+              <div class="products__animation-field">
+                <img class = "products__img"
+                src="images/portfolio3.jpg"
+                alt="The Seafood restaurant"
+                />
+                <div class="products__card-popup-box"><span class="products__card-popup-description">Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji</span></div> 
+              </div>
+              <figcaption class = "products__bottom"><h4 class="products__name">Restauracja Seafood</h4><h5 class="products__category products__category--tabpadding3">Aplikacja</span></figcaption>
+            </figure>
+          </li>
+          <li class = "products__product">
+            <figure class="products__product-tile">
+              <div class="products__animation-field">
+                <img class = "products__img"
+                src="images/portfolio4.jpg"
+                alt="Headphones"
+                />
+                <div class="products__card-popup-box"><span class="products__card-popup-description">Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji</span></div> 
+              </div>
+              <figcaption class = "products__bottom"><h4 class="products__name">Projekt Prime</h4><h5 class="products__category products__category--tabpadding4">Marketing</span></figcaption>
+            </figure>
+          </li>
+          <li class = "products__product">
+            <figure class="products__product-tile">
+              <div class="products__animation-field">
+                <img class = "products__img"
+                src="images/portfolio5.jpg"
+                alt="Boxes"
+                />
+                <div class="products__card-popup-box"><span class="products__card-popup-description">Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji</span></div> 
+              </div>
+              <figcaption class = "products__bottom"><h4 class="products__name">Projekt Boxes</h4><h5 class="products__category products__category--tabpadding5">Aplikacja</span></figcaption>
+            </figure>
+          </li>
+          <li class = "products__product">
+            <figure class="products__product-tile">
+              <div class="products__animation-field">
+                <img class = "products__img"
+                src="images/portfolio6.jpg"
+                alt="A dark webpage"
+                />
+                <div class="products__card-popup-box"><span class="products__card-popup-description">Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji</span></div> 
+              </div>
+              <figcaption class = "products__bottom"><h4 class="products__name">Inspiration has no Borders</h4><h5 class="products__category">Strona internetowa</span></figcaption>
+            </figure>
+          </li>
+          <li class = "products__product">
+            <figure class="products__product-tile">
+              <div class="products__animation-field">
+                <img class = "products__img"
+                src="images/portfolio7.jpg"
+                alt="A magasine"
+                />
+                <div class="products__card-popup-box"><span class="products__card-popup-description">Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji</span></div> 
+              </div>
+              <figcaption class = "products__bottom"><h4 class="products__name">Magazyn Limited Edition</h4><h5 class="products__category">Dizajn</span></figcaption>
+            </figure>
+          </li>
+          <li class = "products__product">
+            <figure class="products__product-tile">
+              <div class="products__animation-field">
+                <img class = "products__img"
+                src="images/portfolio8.jpg"
+                alt="A label"
+                />
+                <div class="products__card-popup-box"><span class="products__card-popup-description">Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji</span></div> 
+              </div>
+              <figcaption class = "products__bottom"><h4 class="products__name">Projekt LAB</h4><h5 class="products__category products__category--tabpadding8">Marketing</span></figcaption>
+            </figure>
+          </li>
+          <li class = "products__product">
+            <figure class="products__product-tile">
+              <div class="products__animation-field">
+                <img class = "products__img"
+                src="images/portfolio9.jpg"
+                alt="Hands on a notebook"
+                />
+                <div class="products__card-popup-box"><span class="products__card-popup-description">Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji</span></div> 
+              </div>
+              <figcaption class = "products__bottom"><h4 class="products__name">Growing Business</h4><h5 class="products__category products__category--tabpadding9">Aplikacja</span></figcaption>
+            </figure>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class = "container container--footer">
+      <ul class = "footer-elements">
+        <li class = "footer-block">
+          <div>
+            <a class="footer-block__Webstudio" href="index.html"><span class = "footer-block__Web">Web</span>Studio</a>
+            <address class = "footer-block__address">m. Warszawa, Aleje Jerozolimskie 21</address>
+            <a class = "footer-block__contact-info" href="mailto:info@example.com">info@example.com</a>
+            <a class = "footer-block__contact-info" href="tel:+48111111111">+48 111 111 111</a>
+          </div>
+        </li>
+        <li class = "footer-block">
+          <div>
+            <span class = "join-us">DOŁĄCZ DO NAS</span>
+            <ul class = "socials socials--footer">
+              <li class = "socials__icon socials__icon--footer">
+                <div class = "socials__circle socials__circle--footer">
+                  <svg width="20" height="20">
+                    <use
+                    href="/goit-markup-hw-08/images/icons.svg#icon-insta"
+                    ></use>
+                  </svg>
+                </div>
+              </li>
+              <li class = "socials__icon socials__icon--footer">
+                <div class = "socials__circle socials__circle--footer">
+                  <svg width="20" height="16.25">
+                    <use
+                    href="/goit-markup-hw-08/images/icons.svg#icon-twitter"
+                    ></use>
+                  </svg>
+                </div>
+              </li>
+              <li class = "socials__icon socials__icon--footer">
+                <div class = "socials__circle socials__circle--footer">
+                  <svg width="10" height="20">
+                    <use
+                    href="/goit-markup-hw-08/images/icons.svg#icon-facebook"
+                    ></use>
+                  </svg>
+                </div>
+              </li>
+              <li class = "socials__icon socials__icon--footer">
+                <div class = "socials__circle socials__circle--footer">
+                  <svg width="20" height="20">
+                    <use
+                    href="/goit-markup-hw-08/images/icons.svg#icon-linkedin"
+                    ></use>
+                  </svg>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class = "footer-block">
+          <div class="newsletter-box">
+            <span class="newsletter-slogan">ZAPISZ SIĘ DO NEWSLETTERA</span>
+            <form class="newsletter" name="newsletter">
+              <label class="newsletter__mail">
+                <input class="newsletter__input" type="email" name="email" placeholder="E-mail" />
+              </label>
+            </form>
+          </div>
+        </li>
+        <li class = "footer-block">
+          <div class="submit-button-newsletter-box">
+            <button class="submit-button-newsletter" type="submit"><span class="submit-button-newsletter__text">Zapisz się</span></button>
+            <a href="">
+              <svg class="submit-button-newsletter__icon" width="24" height="24">
+                <use
+                href="/goit-markup-hw-08/images/icons.svg#icon-newsletter-send"
+                ></use>
+              </svg>
+            </a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </footer>
+  <script src="./js/mobile-menu.js"></script>
+</body>
+</html>

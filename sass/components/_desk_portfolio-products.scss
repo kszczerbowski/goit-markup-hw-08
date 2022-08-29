@@ -1,0 +1,64 @@
+@media (min-width: 769px) {
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    &__product {
+        flex-basis: calc((100%/3) - 30px);
+        margin-left: 15px;
+        margin-right: 15px;
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+    &__name {
+        margin: 0px 24px 0px 0px;
+    }
+    &__category {
+        &--tabpadding1 {
+            @media (max-width: 1197px) {
+                padding-bottom: 55px;
+            }
+        }
+        &--tabpadding3 {
+            @media (max-width: 1197px) {
+                padding-bottom: 55px;
+            }
+        }
+        &--tabpadding4 {
+            @media (max-width: 976px) {
+                padding-bottom: 55px;
+            }
+        }
+        &--tabpadding5 {
+            @media (max-width: 976px) {
+                padding-bottom: 55px;
+            }
+        }
+        &--tabpadding8 {
+            @media (max-width: 925px) {
+                padding-bottom: 55px;
+            }
+        }
+        &--tabpadding9 {
+            @media (max-width: 925px) {
+                padding-bottom: 55px;
+            }
+        }
+    }
+    &__product-tile {
+        margin: 0px;
+        min-width: 0px;
+    }
+    &__card-popup-description {
+        @media (max-width: 1180px) {
+            font-size: 16px;
+        }
+        @media (max-width: 1000px) {
+            font-size: 14px;
+        }
+        @media (max-width: 900px) {
+            font-size: 12px;
+        }
+    }
+}
+}

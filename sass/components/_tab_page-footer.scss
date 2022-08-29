@@ -1,0 +1,24 @@
+@media (min-width: 481px) and (max-width: 768px) {
+.footer-elements {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.footer-block {
+    &:nth-child(1) {
+        width: 253px;
+    }
+    &:nth-child(2) {
+        width: 206px;
+        margin: 0px;
+    }
+    &:nth-child(3) {
+        margin-top: 60px;
+        width: 450px;
+    }
+    &:nth-child(4) {
+        margin: 0px 100px;
+    }
+}
+}

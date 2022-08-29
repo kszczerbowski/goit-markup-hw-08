@@ -1,0 +1,28 @@
+@media (min-width: 769px) {
+.filters {
+    justify-content: center;
+}
+
+.filter-button {
+    &--all {
+        padding: 6px 22px;
+        margin: 0px 4px;
+    }
+    &--sites {
+        padding: 6px 22px;
+        margin: 0px 4px;
+    }
+    &--apps {
+        padding: 6px 22px;
+        margin: 0px 4px;
+    }
+    &--design {
+        padding: 6px 22px;
+        margin: 0px 4px;
+    }
+    &--marketing {
+        padding: 6px 22px;
+        margin: 0px 4px;
+    }
+}
+}

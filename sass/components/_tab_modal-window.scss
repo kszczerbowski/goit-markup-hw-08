@@ -1,0 +1,11 @@
+@media (min-width: 481px) and (max-width: 768px) {
+.modal-window {
+    width: 41.41%;
+}
+
+.ordering-form {
+    &__name, &__phone, &__mail, &__comment {
+        max-width: 448px;
+    }
+}
+}

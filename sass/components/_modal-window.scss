@@ -1,0 +1,201 @@
+%animate {
+    transition-property: color, fill, background-color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-window-backdrop {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: $color-backdrop;
+    transition-property: opacity;
+    transition-duration: 700ms;
+    opacity: 100%;
+}
+
+.is-hidden {
+    visibility: hidden;
+    transition-property: opacity, visibility;
+    transition-duration: 700ms;
+    opacity: 0%;
+    pointer-events: none;
+}
+
+.modal-window {
+    position: absolute;
+    transform: translate(50%, -50%);
+    top: 50%;
+    right: 50%;
+    width: calc(100% - 30px);
+    height: 609px;
+    background-color: $color-modal-window;
+    border-radius: 4px;
+    box-shadow: 0px 2px 1px 0px #00000033,
+                0px 1px 1px 0px #00000024,
+                0px 1px 3px 0px #0000001F;
+    transition-property: opacity;
+    transition-duration: 700ms;
+    opacity: 100%;
+    text-align: center;
+    &__button-box {
+        text-align: right;
+    }
+}
+
+.modal-window-button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #0000001A;
+    background-color: $color-modal-window;
+    padding: 0px;
+    margin-top: 8px;
+    margin-right: 8px;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.form-heading {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    padding-bottom: 8px;
+    margin: 0px 40px 0px 40px;
+}
+
+.ordering-form {
+    &__name, &__phone, &__mail, &__comment {
+        max-width: 370px;
+    }
+    &__input {
+        width: calc(100% - 80px);
+        height: 40px;
+        border: 1px solid $color-form-borders;
+        border-radius: 4px;
+        padding-left: 42px;
+        @extend %animate;
+        &:hover, &:focus {
+            border-color: $color-active;
+            outline: none;
+        }
+    }
+    &__comment-field {
+        resize: none;
+        width: calc(100% - 80px);
+        height: 120px;
+        display: block;
+        margin: auto;
+        padding: 12px 16px;
+        border: 1px solid $color-form-borders;
+        border-radius: 4px;
+        @extend %animate;
+        &:hover, &:focus {
+            border-color: $color-active;
+            outline: none;
+        }
+        &::placeholder {
+            color: $color-text-placeholder;
+        }
+    }
+    &__name, &__phone, &__mail, &__comment, &__formalities {
+        position: relative;
+    }
+    &__icon {
+        position: absolute;
+        left: 55px;
+        top: 32px;
+        fill: $color-form-icon;
+    }
+    &__subheading {
+        margin-left: 40px;
+        margin-bottom: 4px;
+        margin-top: 4px;
+        text-align: left;
+        display: block;
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.01em;
+        color: $text-secondary;
+    }
+    &__formalities {
+        color: $text-secondary;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+    }
+    &__terms-conditions {
+        color: $color-active;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        text-decoration: underline;
+    }
+    &__terms-box {
+        position: relative;
+        padding-top: 20px;
+        margin: auto 40px;
+    }
+    &__statement {
+        text-align: center;
+    }
+}
+
+.ordering-form__input:hover, .ordering-form__input:focus, .ordering-form__terms-checkbox:hover, .ordering-form__terms-checkbox:focus {
+    & + .ordering-form__icon {
+        fill: $color-active;
+    }
+}
+
+.ordering-form__input:hover, .ordering-form__terms-checkbox:hover, .ordering-form__icon:hover {
+    fill: $color-active;
+}
+
+.ordering-form__terms-checkbox {
+    display: inline-block;
+    position: relative;
+    right: 202px;
+    &:hover, &:focus {
+        border-color: $color-active;
+        outline: none;
+    }
+    &:checked {
+        z-index: 0;
+        opacity: 0%;
+    }
+    &:checked + .ordering-form__checkbox-icon--uncheck {
+        z-index: 0;
+        opacity: 0%;
+    }
+}
+
+.ordering-form__checkbox-icon {
+    position: absolute;
+    left: 0px;
+    top: 15px;
+    &--uncheck {
+        z-index: 15;
+        background-color: white;
+    }
+}
+
+.submit-button {
+    position: absolute;
+    left: calc((100% - 200px)/2);
+    bottom: 40px;
+    display: block;
+    height: 50px;
+    width: 200px;
+    border-radius: 4px;
+    background-color: $color-active;
+    color: $text-active-button;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.875;
+    letter-spacing: 0.06em;
+    border: none;
+    padding: 0px;
+    box-shadow: 0px 4px 4px 0px #00000026;
+    cursor: pointer;
+}

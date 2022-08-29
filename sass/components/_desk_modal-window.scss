@@ -1,0 +1,13 @@
+@media (min-width: 769px) {
+    .modal-window {
+        width: 528px;
+    }
+    .ordering-form {
+        &__name, &__phone, &__mail, &__comment {
+            max-width: 448px;
+        }
+    }
+    .ordering-form__terms-checkbox {
+        visibility: hidden;
+    }
+    }

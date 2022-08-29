@@ -196,11 +196,8 @@
     }
     &__icon {
         position: absolute;
-        left: 160px;
+        left: 250px;
         top: 13px;
-        @media (max-width: 480px) {
-            left: -13px;
-        }
     }
     &__text {
         position: absolute;

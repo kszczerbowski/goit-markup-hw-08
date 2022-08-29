@@ -7,5 +7,20 @@
     &__name, &__phone, &__mail, &__comment {
         max-width: 448px;
     }
+    &__icon {
+        %--1st {
+            top: 117px;
+            left: 55px;
+        }
+        %--2nd {
+            top: 177px;
+            left: 55px;
+        }
+        %--3rd {
+            top: 240px;
+            left: 55px;
+        }
+    }
+        
 }
 }

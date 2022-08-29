@@ -21,4 +21,12 @@
         margin: 0px 100px;
     }
 }
+
+.submit-button-newsletter {
+    &__icon {
+        position: absolute;
+        left: 160px;
+        top: 13px;
+    }
+}
 }

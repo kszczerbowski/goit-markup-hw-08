@@ -10,4 +10,20 @@
     .ordering-form__terms-checkbox {
         visibility: hidden;
     }
+    .ordering-form {
+    &__icon {
+        %--1st {
+            top: 117px;
+            left: 55px;
+        }
+        %--2nd {
+            top: 177px;
+            left: 55px;
+        }
+        %--3rd {
+            top: 240px;
+            left: 55px;
+        }
     }
+    }
+}

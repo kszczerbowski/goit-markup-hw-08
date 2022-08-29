@@ -105,13 +105,16 @@
         position: absolute;
         fill: $color-form-icon;
         %--1st {
-
+            top: 147px;
+            left: 55px;
         }
         %--2nd {
-            
+            top: 207px;
+            left: 55px;
         }
         %--3rd {
-            
+            top: 270px;
+            left: 55px;
         }
     }
     &__subheading {
@@ -178,8 +181,8 @@
     position: absolute;
     left: 5px;
     top: 23px;
-    width: 24px;
-    height: 24px;
+    width: 16px;
+    height: 16px;
     &--uncheck {
         z-index: 15;
         background-color: white;

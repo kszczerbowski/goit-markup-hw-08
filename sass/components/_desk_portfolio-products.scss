@@ -51,13 +51,7 @@
     }
     &__card-popup-description {
         @media (max-width: 1180px) {
-            font-size: 16px;
-        }
-        @media (max-width: 1000px) {
-            font-size: 14px;
-        }
-        @media (max-width: 900px) {
-            font-size: 12px;
+            font-size: calc(10vw / 7);
         }
     }
 }
